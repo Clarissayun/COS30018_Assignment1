@@ -1,4 +1,4 @@
-package subTest1;
+package allAgents;
 
 import jade.core.Agent;
 import jade.core.behaviours.TickerBehaviour;
@@ -27,7 +27,7 @@ public class CustomerAgent extends Agent {
         new Parcel("e", 9)
     };
     
-    private RouteUI ui; // Reference to the UI
+//   private RouteUI ui; // Reference to the UI
     
     
 
@@ -68,10 +68,10 @@ public class CustomerAgent extends Agent {
             msg.setContent("Parcel drawn: " + selectedParcel.name + " Weight: " + selectedParcel.weight + " units" + " Location: (" + location[0] + ", " + location[1] + ")");
             send(msg);
             
-            // Update UI with the location of the new parcel
-            if (ui != null) {
-                ui.updateGrid(location[0], location[1], Color.GREEN);
-            }
+//            // Update UI with the location of the new parcel
+//            if (ui != null) {
+//                ui.updateGrid(location[0], location[1], Color.GREEN);
+//            }
             
         }
     }
