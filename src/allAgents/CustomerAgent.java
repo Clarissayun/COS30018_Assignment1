@@ -26,10 +26,13 @@ public class CustomerAgent extends Agent {
         new Parcel("d", 8),
         new Parcel("e", 9)
     };
+<<<<<<< HEAD
     
 //   private RouteUI ui; // Reference to the UI
     
     
+=======
+>>>>>>> 7b4a32ae81ebcd90e1bce4e07608e79c10b8fd89
 
     protected void setup() {
         // Initialize the location once at the beginning for initial setup
@@ -68,10 +71,13 @@ public class CustomerAgent extends Agent {
             msg.setContent("Parcel drawn: " + selectedParcel.name + " Weight: " + selectedParcel.weight + " units" + " Location: (" + location[0] + ", " + location[1] + ")");
             send(msg);
             
+<<<<<<< HEAD
 //            // Update UI with the location of the new parcel
 //            if (ui != null) {
 //                ui.updateGrid(location[0], location[1], Color.GREEN);
 //            }
+=======
+>>>>>>> 7b4a32ae81ebcd90e1bce4e07608e79c10b8fd89
             
         }
     }
